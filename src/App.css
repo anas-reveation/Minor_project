@@ -1,38 +1,849 @@
-.App {
-  text-align: center;
+:root{
+  --primary: #35BACD;
+  --secondary: #454545;
+  --tertiary: #2999AB;
+  --font-small: #5F7483;
+  --light: #ffff;
+  --bg-element: #EBFCFF;
+  --footer-text: #C3C3C3;
+  --bg-foter: #04343C;
+  --service-title: #0C5F6C;
+  --dashed-img: #31B2C7;
+  --bg-blogs: #faf9ff;
+  --footer-tx-bt: #bebebe;
+  --accordian-color: #4B436B;
+  --degree: #3A5367;
+  --black:#262626;
+
+}
+.navbar-nav li a{
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+.primary{
+  color: var(--primary);
+}
+.service-t{
+  color: var(--service-title);
+}
+.degree{
+  color: var(--degree);
+}
+.bann-h1{
+  font-size: 45px;
+}
+.sev-2{
+  margin-left: -28rem;
+}
+.black-text{
+  color: var(--black)!important;
+}
+.header-bg{
+  background-color: var(--primary);
+}
+.footer-bg{
+  background-color: var(--bg-foter);
+}
+.footer-tx-bt{
+  color: #bebebe;
+}
+.ul-l ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.ul-l ul li a {
+  color: var(--light);
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: var(--footer-text);
+  font-size: 16px;
+  font-weight: 600!important;
+}
+.secondary{
+  color: var(--secondary);
+ 
+}
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+}
+.anchor:hover{
+  color: var(--primary);
+}
+.light-anc:hover{
+  color: var(--light);
+}
+.hr-p {
+  border-top: 1px solid rgba(0,0,0,.35);
+}
+.shadow-s{
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+}
+.middle-bg h2{
+  font-size: 40px;
+}
+.tertiary{
+  color: var(--tertiary);
+}
+.font-sm{
+  color: var(--font-small);
+}
+.tab-content p{
+  text-align: justify;
+}
+.speciality-p p{
+  text-align: justify;
+}
+.healthy-s p{
+  text-align: justify;
+}
+.bg-primary-color{
+  background-color: var(--primary) !important;
+  color: var(--light);
+}
+.bg-tertiary-color{
+  background-color: var(--tertiary) !important;
+  color: var(--light);
+}
+.button-h:hover{
+  background-color: var(--light) !important;
+  color: var(--primary) !important;
+  border-color: var(--primary);
+}
+.button-h:hover a{
+  color: var(--primary) !important;
+  text-decoration: none !important;
+}
+.hover-speciality:hover{
+  background-color: var(--light) !important;
+  color: var(--primary);
+  /* // border: 2px solid var(--primary); */
+}
+.hover-speciality:hover .link{
+  display: none;
+}
+.link2{
+  display: none;
+}
+.hover-speciality:hover .link2{
+  display: block;
+}
+.w-38{
+  width: 43%;
+}
+.s-tab {
+  height: 100%;
+}
+.s-tab li{
+  background-color: var(--light);
+}
+.s-tab .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: var(--primary) !important;
+  color: var(--light);
+}
+.s-tab .nav-link{
+  color: var(--primary);
+  font-weight: 600;
+  width: 100%;
+  padding: 15px;
+  border-radius: 0px;
+  font-size: 22px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-text{
+  /* color: var(--tertiary); */
+  color: black!important;
+  font-weight: 400;
+  width: 100%;
+  padding: 15px;
+  border-radius: 0px;
+  font-size: 22px;
+  text-decoration: none;
+}
+.nav-text.active{
+  color: var(--bg-element)!important;
+}
+.font-h{
+  font-size: 45px;
+}
+.accord .accordion-item{
+  border: none;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 3rem;
+}
+.accord .accordion-item h2 button{
+  font-size: 20px;
+  color: var(--accordian-color);
+  font-weight: 500;
+}
+.f-12{
+  font-size: 12px!important;
+  font-family: "Montserrat"!important;
+ 
+}
+.f-14{
+  font-size: 14px!important;
+  font-family: "Montserrat"!important;
+ 
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+  color: var(--primary);
+  font-weight: 700;
+}
+.bg-banner{
+  background: linear-gradient(257.87deg, rgba(16, 35, 47, 0.4845) 26.36%,rgba(3, 25, 29, 0.820403) 55.04%, rgba(1, 24, 28, 0.85) 90.91%), url(../public/images/homeBanner.webp);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+.f-h5 h5{
+  font-size: 18px;
+}
+.choose-bg::before{
+  background-color: var(--bg-element);
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 558.4px;
+  margin-left: -32rem;
+  width: 121.522px;
+  margin-top: -41px;
+}
+.choose-bg::after{
+  background-color: var(--primary);
+  background-color: var(--primary);
+  content: "";
+  z-index: -1;
+  position: relative;
+  height: 12%;
+  left: -5%;
+  align-items: center;
+  display: flex;
+  width: 12%;
+  top: 75%;
+}
+.bg-dot::after{
+  background-image: url(../public/images/logo512.png);
+  content: "";
+  z-index: -1;
+  position: relative;
+  height: 12%;
+  left: -5%;
+  align-items: center;
+  display: flex;
+  width: 12%;
+  top: 71%;
+}
+.aboutbg::before{
+  background-color: var(--primary);
+  background-color: var(--primary);
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 123.4px;
+  width: 135.913px;
+  margin-top: 378px;
+  margin-left: -17px;
+}
+.our-doc::before{
+  background-image: url(../public/images/logo512.png);
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 138.5px;
+  background-size: cover;
+  right: 32%;
+  align-items: center;
+  display: flex;
+  width: 151.931px;
+  margin-top: -94px;
+}
+.our-doc2::before{
+  background-image: url(../public/images/logo512.png);
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 117.15px;
+  background-size: cover;
+  right: 0%;
+  align-items: center;
+  display: flex;
+  width: 91.15px;
+}
+.serv-detail::before{
+  background-image: url(../public/images/logo512.png);
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 117.15px;
+  background-size: cover;
+  right: 0%;
+  align-items: center;
+  display: flex;
+  width: 91.15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.middle-bg{
+  background-image: linear-gradient(257.19deg, rgba(11, 34, 48, 0.85) 14.1%, rgba(30, 109, 120, 0.85) 88.13%), url(../public/images/logo512.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: 18rem;
+  margin-bottom: 5rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-bg{
+  background-image: linear-gradient(257.18deg, rgba(8, 24, 34, 0.85) 16.64%, rgba(54, 95, 101, 0.85) 96.84%), url(../public/images/logo512.png);
+  background-position: center;
+  background-size: cover;
+  padding: 103px 0px 119px 0px;
+}
+.contact-bg h2{
+  font-size: 40px;
+}
+.test-img img{
+  border: 4px dashed var(--dashed-img);
+  border-radius: 50%;
+  padding: 7px;
+}
+.test-img1{
+  position: relative;
+  top: 0%;
+}
+.add-f a{
+  text-decoration: none;
+}
+.bg-service{
+  background-image: linear-gradient(257.87deg, rgba(16, 97, 111, 0.85) 4.62%, rgba(14, 31, 34, 0.85) 71.84%), url(../public/images/logo512.png);
+  background-size: cover;
+  background-position: center;
+  padding: 138px 0px 120px 0px;
+}
+.sd-bg::before{
+  background-color: var(--bg-element);
+  content: "";
+  margin-left: -35px;
+  height: 479.612px;
+  position: absolute;
+  z-index: -2;
+  width: 75.95px;
+  margin-top: -24px;
+  
+}
+.sd-bg::after{
+  background-color: var(--primary);
+  content: "";
+  height: 80.15px;
+  position: absolute;
+  z-index: -2;
+  margin-left: -86px;
+  margin-top: -20px;
+  width: 106.338px;
+  
+}
+.profession::before{
+  background-color: var(--primary);
+  content: "";
+  height: 38px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -2;
+  margin-left: -16px;
+  margin-top: 27rem;
+  width: 38px;
+  
+}
+.profession::after{
+  background-color: var(--bg-element);
+  content: "";
+  margin-left: -35px;
+  height: 507.612px;
+  position: absolute;
+  z-index: -2;
+  width: 75.95px;
+  margin-top: -24px;
+  
+}
+.galleries::before{
+  background-color: var(--bg-element);
+  content: "";
+  margin-left: -35px;
+  height: 631.612px;
+  position: absolute;
+  z-index: -2;
+  width: 75.95px;
+  margin-top: -24px;
+  
+}
+.galleries::after{
+  background-color: var(--primary);
+  content: "";
+  height: 80.15px;
+  position: absolute;
+  z-index: -2;
+  margin-left: -86px;
+  margin-top: 32rem;
+  width: 106.338px;
+  
+}
+.service-curve {
+  right: 15%;
+  position: relative;
+  top: -7%;
+  border-radius: 5px;
+}
+.service-curve-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: -93px;
+  margin-bottom: -88px;
+}
+.service-curve-2{
+  left: 82%;
+  position: relative;
+  top: 8%;
+}
+.element-ab{
+  position: absolute;
+  margin-top: -44px;
+  left: 86%;
+  z-index: -2;
+}
+.speciality-p{
+  padding: 25px 58px 20px 58px;
+}
+.service-doc{
+  background-image: url(../public/images/logo512.png) !important;
+}
+.anc{
+  text-decoration: none !important;
+  color: var(--light)!important;
+}
+.anc:hover{
+  text-decoration: underline !important;
+  color: var(--light)!important;
 }
 
-.App-link {
-  color: #61dafb;
+.dentist-t{
+  padding: 22px 15px 5px 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: var(--light);
+  margin-top: -5rem;
+  margin-bottom: 10px;
+  height: 35%;
+}
+.special-treat::before{
+  background-color: var(--primary);
+  content: "";
+  height: 18px;
+  position: absolute;
+  width: 18px;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 189px;
+  margin-top: 6px;
+}
+.special-treat::after{
+  background-color: var(--primary);
+  content: "";
+  height: 40px;
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 16px;
+  margin-top: -63px;
+}
+.h-85{
+  height: 100%;
+  padding-bottom: 24px;
+}
+.healthy-md{
+  margin-bottom: -5rem !important;
+  margin-top: 6rem !important;
+}
+.logo-sm h6{
+  font-size: 14px;
+}
+.office-hr li{
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+/* phone */
+
+@media (max-width: 767px){
+  .home-sm h1{
+      font-size: 30px !important;
   }
-  to {
-    transform: rotate(360deg);
+  .sd-bg::before{
+  background-color: var(--bg-element);
+  content: "";
+  margin-left: -8px;
+  height: 283.612px;
+  position: absolute;
+  z-index: -2;
+  width: 51.95px;
+  margin-top: -15px;
+  }
+  .profession::after{
+      height: 283.612px;
+      width: 51.95px;
+      }
+      .profession::before{
+          margin-top: 12rem;
+      }
+      .treat-img{
+          width: 100% !important;
+          height: 100% !important;
+      }
+  .bann-h1{
+      font-size: 25px;
+  }
+  .w-38{
+      width: 83%;
+  }
+  .dentist-t{
+      height: auto;
+  }
+  .des-serv{
+  margin-top: 4rem !important;
+  margin-bottom: 2rem !important;
+  }
+  .middle-bg h2{
+      font-size: 26.628px;
+  }
+  .contact-bg h2{
+      font-size: 26.628px;
+  }
+  .healthy-md{
+      margin-bottom: -3rem !important;
+  }
+  .nav-sm{
+      padding-left: 8px;
+  }
+  .bg-banner{
+      background-position: 66%;
+  }
+  .bg-service{
+      background-position: 28%;
+      padding: 104px 0px 98px 0px;
+  }
+  .next-btn{
+      width: 100%;
+  }
+  .galleries::before{
+      background-color: var(--bg-element);
+      content: "";
+      margin-left: -8px;
+      height: 194.612px;
+      position: absolute;
+      z-index: -2;
+      width: 51.95px;
+      margin-top: -17px;
+      }
+  .aboutbg::before{
+  margin-top: 158px;
+  margin-left: -11px;
+  height: 118.4px;
+  width: 113.913px;
+  }
+  .btn-special {
+      font-size: 14px;
+  }
+  .gallery-sm img{
+      height: 100% !important;
+  }
+  .accord .accordion-item h2 button{
+      font-size: 18px;
+  }
+  .sd-bg::after{
+      height: 80.15px;
+      position: absolute;
+      z-index: -2;
+      margin-left: -89px;
+      margin-top: -5px;
+      width: 93.338px;
+  }
+  .galleries::after{
+      height: 80.15px;
+      position: absolute;
+      z-index: -2;
+      margin-left: -81px;
+      margin-top: -10px;
+      width: 93.338px;
+  }
+  .choose-bg::before{
+      position: absolute;
+      height: 404.4px;
+      margin-left: -17rem;
+      width: 20%;
+      margin-top: -26px;
+  }
+  .healthy-s .p-5{
+      padding: 1.5rem !important;
+  }
+  .aos-overflow{
+      overflow: hidden;
+  }
+  .choose-bg::after{
+      display: none;
+  }
+  .sd-bg img{
+      padding: 14px;
+  }
+  .speciality-p{
+      padding: 25px 0px 0px 0px;
+  }
+  .second-s{
+      margin-top: 7rem;
+  }
+  .psm-4{
+      padding: 1.5rem;
+  }
+  .mtsm{
+      margin-top: 1rem !important;
+  }
+  .mbsm{
+      margin-bottom: 0rem !important;
+  }
+  .sev-2{
+      margin-left: 0rem;
+  }
+  .footer-h5 h5{
+   font-size: 16px;
+  }
+  .logo-sm h6{
+      font-size: 14px;
+  }
+  .add-f span{
+      font-size: 14px;
+  }
+  .ul-l ul li{
+      font-size: 14px;
+  }
+  .footer-text h5{
+      font-size: 11px !important;
+  }
+  .middle-bg{
+      padding: 45px 0px 56px 0px;
+      margin-top: 4rem;
+  }
+  .service-curve-2{
+      left: 75%;
+  }
+  .service-curve{
+      right: 20%;
+  }
+  .test-img1{
+      position: static;
+      top: 34%;
+  }
+  .bg-chooseleft{
+      height: 300px;
+  }
+  .bc-ig-1{
+      height: 225px;
+  }
+  .bc-ig-3{
+      height: 70px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+  .feature-h img{
+      width: 44px !important;
+  }
+     .add-f {
+      margin-top: 0 !important;
+     }
+     .profession::after{
+      margin-left: -52px;
+      height: 513.612px;
+     }
+     .dentist-t{
+      height: auto;
+  }
+  .treat-img{
+      width: 100% !important;
+      height: 100% !important;
+  }
+  .ul-l ul li a{
+      font-size: 16px;
+  }
+     .profession::before{
+      margin-top: 27rem;
+     }
+     .service-curve {
+      right: 20%;
+  }
+  .service-curve-2 {
+      left: 77%;
+  }
+     .home-sm{
+      margin-top: -1rem !important;
+     }
+     .gallery-sm img{
+      height: 208px !important;
+  }
+  .galleries::before{
+  margin-left: -18px;
+  height: 358.612px;
+  }
+  .galleries::after{
+      margin-top: 15rem;
+  }
+  .middle-bg h2{
+      font-size: 18px;
+  }
+  .sd-bg::before{
+      margin-left: -22px;
+  height: 514.612px;
+  }
+  .aboutbg::before{
+      margin-top: 400px;
+  }
+  .ipad-p{
+      padding: 12px  !important;
+  }
+  .healthy-s{
+      padding-top: 12px;
+  }
+  .accord-elem{
+      margin-left: 26rem !important;
+  }
+  .choose-bg::before{
+      height: 381.4px;
+  margin-left: -16rem;
+  width: 121.522px;
+  margin-top: -37px;
+  }
+  .choose-bg::after{
+      display: none;
+  }
+  /* // .choose-bg1::after{
+  // margin-left: 38rem;
+  // margin-top: -19px;
+  // } */
+  .sev-2{
+      margin-left: 0rem;
+  }
+  .middle-bg p{
+      font-size: 12px;
+  }
+  .speciality-p{
+      padding: 25px 11px 20px 28px;
+  }
+  .middle-bg{
+      padding: 15px 0px 30px 0px;
+  }
+  .aos-overflow{
+      overflow: hidden;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+  .sev-2 {
+      margin-left: -1rem;
+  }
+   /* .choose-bg1::after{
+       margin-left: 54rem;
+ } */
+  .gallery-sm img{
+      height: 282px !important;
+  }
+  .add-f {
+      margin-top: 0 !important;
+     }
+     .ul-l ul li a{
+      font-size: 14px;
+     }
+  .service-curve {
+      right: 24%;
+      top: -5%;
+  }
+  .treat-img{
+      width: 100% !important;
+      height: 100% !important;
+  }
+  .service-curve-2{
+      left: 69%;
+  }
+  .dentist-t{
+      height: 48%;
+  }
+  .middle-bg{
+    padding: 14px 0px 31px 0px;
+  }
+  .profession::before{
+      margin-top: 17rem;
+  }
+  .aboutbg::before{
+      margin-top: 251px;
+  }
+  .profession::after{
+  margin-left: -53px;
+  height: 373.612px;
+  }
+  .galleries::before{
+      height: 462.612px;
+  }
+  .galleries::after{
+      margin-top: 22rem;
+  }
+  .sd-bg::before{
+      height: 376.612px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px){
+
+  .home-sm{
+      margin-top: -2rem !important;
+  }
+  .w-38{
+      width: 50%;
+  }
+  .our-doc1 img{
+      margin-top: -13rem !important;
+  }
+  .aboutbg::before{
+      margin-top: 324px;
+  }
+  .treat-img{
+      width: 100% !important;
+      height: 100% !important;
+  }
+  .service-curve{
+      right: 17%;
+      top: -6%;
+  }
+  .profession::before{
+      margin-top: 21rem;
+  }
+  .sev-2 {
+      margin-left: -25rem;
+  }
+}
+@media (min-width: 1200px){
+  h2{
+      font-size: 2.8125rem;
+  }
+}
+@media (min-width: 310px) and (max-width: 320px){
+  .aboutbg::before{
+  height: 94.4px;
+  margin-top: 134px;
+  width: 93.913px;
+  }
+  .w-38{
+      width: 100%;
+  }
+  .treat-img{
+      width: 100% !important;
+      height: 100% !important;
+  }
+  .home-sm{
+      margin-top: -32px !important;
   }
 }
